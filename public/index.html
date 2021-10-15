@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+	<title>SLShort</title>
+	<script type="text/javascript" src="/static/index.js"></script>
+	<link href="/static/index.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta charset="UTF-8"/>
+	<meta property="og:url" content="../../login/">
+	<meta property="og:title" content="SLShort">
+	<meta property="og:type" content="article">
+	<meta property="og:description" content="Create shortened links!">
+	<meta property="og:site_name" content="SLShort">
+	<meta property="og:image" content="">
+</head>
+<body>
+  <nav class="NavigationalBar">
+    <label class="Title"><a class="Title" href="../../">SLShort</a></label>
+  </nav>
+  <div class="Content">
+  <div class="Center">
+    <form action="../new" method="POST">
+      <div class="form-group">
+        <input placeholder="Name" type="text" class="form-control" name="name" required/>
+        <input placeholder="Url" type="text" class="form-control" name="url" required/>
+      </div>
+      <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+    <p>Created by SLT World</p>
+  </div>
+  </div>
+</body>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+	<title>SLShort - Link</title>
+	<script type="text/javascript" src="/static/index.js"></script>
+	<link href="/static/index.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta charset="UTF-8"/>
+</head>
+<body>
+  <nav class="NavigationalBar">
+    <label class="Title"><a class="Title" href="../../">SLShort - {{ name }}</a></label>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <li><a href="../../" class="Active">Home</a></li>
+    </ul>
+  </nav>
+  <div class="Content">
+    <div class="Center">
+      <div class="Box">
+        <p><cb property="name-value">Name: {{ name }}</cb></p>
+        <p><cb property="url-value">Redirect: {{ url }}</cb></p>
+
+        <p><cb property="short-value">Shorted Url: {{ short_url }}</cb></p>
+      </div>
+    </div>
+  </div>
+</body>

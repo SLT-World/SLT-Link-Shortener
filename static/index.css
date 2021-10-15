@@ -1,0 +1,262 @@
+@font-face {
+  font-family: "Font";
+  src: url('SLTPixel.ttf');
+}
+
+nav.NavigationalBar {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  overflow: hidden;
+	/*background: #0092FF;*/
+  background-color: rgb(65, 65, 65);
+	height: 80px;
+}
+
+nav.NavigationalBar ul {
+	float: right;
+	margin-right: 20px;
+}
+nav.NavigationalBar ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+
+nav.NavigationalBar ul li a {
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+
+a:hover {
+	background: transparent;
+  color: rgb(175, 175, 175);
+	transition: 0.5s;
+  -o-transition: background 0.5s;
+  -ms-transition: background 0.5s;
+  -moz-transition: background 0.5s;
+  -webkit-transition: background 0.5s;
+}
+
+a.Active {
+	background: black;
+}
+
+nav.NavigationalBar .checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+nav.NavigationalBar #check{
+  display: none;
+}
+
+@media (max-width: 952px){
+  nav.NavigationalBar label.Title{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav.NavigationalBar nav ul li a{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px){
+  nav.NavigationalBar .checkbtn{
+    display: block;
+  }
+  nav.NavigationalBar ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(65, 65, 65);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav.NavigationalBar nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav.NavigationalBar nav ul li a{
+    font-size: 20px;
+  }
+  nav.NavigationalBar a:hover,a.active{
+    background: none;
+	  color: rgb(244, 245, 247);
+  }
+  nav.NavigationalBar #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+label.Title {
+	color: #FFFFFF;
+	line-height: 80px;
+	padding: 0 100px;
+	border-radius: 3px;
+	font-weight: bold;
+  font-size: 30px;
+  margin: 5px 0;
+}
+
+.ContextMenu {
+	width: 200px;
+	padding: 10px 0px;
+	background-color: rgb(244, 245, 247);
+	position: absolute;
+	display: none;
+	transform-origin: top left;
+	animation: ContextMenuOpen 0.5s;
+  border-radius: 8px;
+}
+
+.ContextMenu .item a {
+	color: rgb(65, 65, 65);
+	display: block;
+	padding: 10px;
+}
+
+.ContextMenu .item a:hover {
+	background-color: #EBECF0;
+	transition: 0.5s;
+}
+
+.Content {
+	margin-top: 80px;
+	text-align: center;
+}
+
+* {
+	font-family: "Font", sans-serif;
+  font-size: 25px;
+	color: white;
+  border: none;
+  outline: none;
+	list-style: none;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.Box {
+  width: 35%;
+  background-color: rgb(65, 65, 65);
+	border-radius: 5px;
+	padding: 25px;
+  text-align: start;
+  margin: 5px;
+}
+
+input {
+  width: 37.5%;
+  background-color: rgb(65, 65, 65);
+	border-radius: 5px;
+	padding: 5px 10px;
+  margin: 5px;
+}
+
+.commentta {
+  width: 37.5%;
+  background-color: rgb(65, 65, 65);
+	border-radius: 5px;
+	padding: 5px 10px;
+  height: 50px;
+}
+
+textarea {
+  background-color: rgb(65, 65, 65);
+	border-radius: 5px;
+	padding: 5px 10px;
+  margin: 5px;
+  box-sizing: border-box;
+  
+  resize: vertical;
+  height: auto;
+}
+
+button {
+  width: 100px;
+  background-color: rgb(65, 65, 65);
+	border-radius: 5px;
+	padding: 5px 10px;
+  transition: 0.3s;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: rgb(50, 50, 50);
+}
+
+body {
+	background-color: black;
+}
+
+h1 {
+	color: #FFFFFF;
+	font-size: 50px;
+	line-height: 80px;
+	padding: 0 100px;
+	border-radius: 3px;
+	font-weight: bold;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 5px 0;
+}
+
+.Center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  /*width: 500px;*/
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+p {
+  white-space: pre-line;
+}
+
+.SmallP {
+  font-size: 15px;
+}
+
+/*.votes {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 60px;
+}*/
+
+.Vote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  float: left;
+}
+
+#NewPost {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
